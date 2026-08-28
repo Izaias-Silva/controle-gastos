@@ -1,0 +1,20 @@
+<!DOCTTYPE <html>
+<html lang='pt-br'>
+<head>
+    <meta charset ="UTF-8">
+    <title>Controle de gastos</title>
+</head>
+<body>
+    <nav>
+        {% if user.is authenticated %}
+            Olá, {{user.name}} |
+            <a href=""{% url 'home' %}>Início</a> |
+            <a href="{% url 'logout' %}">Sair</a>
+        {% else %}
+            <a href="{5 login %}">Entrar</a>
+        {% endif %}
+    </nav>
+    <hr>
+    {% block conteuddo %}{% endblock %}
+</body>
+</html>

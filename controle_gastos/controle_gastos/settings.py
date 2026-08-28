@@ -125,3 +125,6 @@ MAILERS = {
         'BACKEND': 'django.core.mail.backends.console.EmailBackend',
     },
 }
+LOGUIN_URL = 'loguin'
+LOGUIN_REDIRECT_URL = 'home'
+LOGOUT_REDIRECT = 'loguin'
